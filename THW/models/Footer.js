@@ -6,11 +6,9 @@ const footerSchema = new mongoose.Schema({
             {
                 day: {
                     type: String,
-                    required: true,
                 },
                 hours: {
                     type: String,
-                    required: true,
                 },
             },
         ],
@@ -24,15 +22,12 @@ const footerSchema = new mongoose.Schema({
             {
                 type: {
                     type: String,
-                    required: true,
                 },
                 icon: {
                     type: String,
-                    required: true,
                 },
                 value: {
                     type: String,
-                    required: true,
                 },
             },
         ],

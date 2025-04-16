@@ -3,17 +3,12 @@ const mongoose = require('mongoose');
 const guidelineSchema = new mongoose.Schema({
     icon: {
         type: String,
-        required: [true, 'Icon is required'],
-        trim: true,
     },
     title: {
         type: String,
-        required: [true, 'Title is required'],
-        trim: true,
     },
     points: {
         type: [String],
-        required: [true, 'Points are required'],
         validate: {
             validator: (arr) => arr.length > 0,
             message: 'At least one point is required',
